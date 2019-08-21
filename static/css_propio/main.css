@@ -1,0 +1,65 @@
+.contenedor {
+    margin-top: 100px;
+}
+
+.bg-dark {
+    background-color: #013676!important;
+}
+
+canvas {
+    position: absolute;
+    top: 147px;
+    left: 128px;
+}
+
+h3 {
+    color: #013676;
+    padding-bottom: 10px;
+}
+
+.chat {
+    margin-top: 20px;
+}
+
+#canvass {
+    display: none;
+}
+
+#videos {
+    display: none;
+}
+
+
+/* #photo {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 320px;
+    height: 240px;
+}
+ */
+
+
+/* .camera {
+    width: 340px;
+    display: inline-block;
+}
+
+.output {
+    width: 340px;
+    display: inline-block;
+}*/
+
+#startbutton {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    right: 70px;
+    background-color: rgb(138, 165, 50);
+    border: 1px solid rgb(138, 165, 50);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+    padding: 10px;
+}

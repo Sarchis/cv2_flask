@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block script %}
+    <script>
+        function addSubmit(ev) {
+            ev.preventDefault();
+            var request = new XMLHttpRequest();
+            request.addEventListener('load', addShow);
+            request.open('POST', {{url_for('video_feed')|tojson}});
+            request.send(new FormData(this))
+        }
+
+        function addShow() {
+            var data = JSON.parse(this.responseText);
+            var span = document.getElementById('result');
+            span.innerText = data.result;
+    }
+    </script>
+{% endblock %}

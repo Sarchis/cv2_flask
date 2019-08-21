@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='css_propio/main.css') }}">
+  <title>Novaventa Face recognition</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <img src="https://www.novaventa.com.co/documents/20147/102626/layout_set_logo.png" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <p>{% block intro %}{% endblock %}</p>
+
+      <div class="col-sm">
+        <h3 class="text-center">Quien eres!</h3>
+        <table class="table">
+          <tr>
+            <th scope="col">Edad</th>
+            <td>24</td>
+          </tr>
+          <tr>
+            <th scope="col">Sexo</th>
+            <td>Hombre</td>
+          </tr>
+          <tr>
+            <th scope="col">Estado de ánimo</th>
+            <td>{{expression}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
